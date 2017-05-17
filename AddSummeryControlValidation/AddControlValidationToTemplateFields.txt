@@ -1,0 +1,25 @@
+﻿Adding Summery Control Validation to a Grid View TemplateField To Validate the User Input
+
+Changes in the TitleInsertValidation page
+- 
+1- Go to the Design mode --> Eidt Fields---> Delete the required fields to add new fields
+2- Add Template fields and return them back to the deleted fields location after giving them names si,ilar to the deleted once
+3- Go to source view and add inside the template fields these lines of codes
+4- 
+<asp:TemplateField HeaderText="Price">
+    <EditItemTemplate>
+          <asp:TextBox ID="price" runat="server" Text="<%# Bind('price') %>">
+		  </asp:TextBox>
+    </EditItemTemplate>
+
+5- After changing the Bound fileds to a emplate field, we have to validate the user entry with control validation
+6- GridView Configuartion--> EditTemplate-->EidtItemTemplate(Update|Insert)
+7- From VS toolbox-->Validation-->RequiredFieldValidator-->Drag and Drop inside the TemplateField (Design Mode)
+8- From RequiredFieldValidator-->Properities -->Modify the values to validate the user Entry
+9- We can add any other validator like RangeValidator or ExpressionValidator in the same way and configure them
+10- Tomake the Validators appear only when we need them, we have to add the property Display="Dynamic"
+
+To Add a summery control validation
+11- Put the cursor beside the gridview and press Enter to go down the GridView
+and Drag a summery control validation and drop it down the GridView
+12- Put the Display property to all validation to the value Display="None""

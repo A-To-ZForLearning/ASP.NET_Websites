@@ -1,0 +1,10 @@
+﻿Changes will be implemented on the 
+     JoinedData.aspx
+1- Add GridView
+2- Add SqlDataSource
+3- From SqlDataSource-->Properities-->Query-->QueryBuilder To build the query
+4- We can add two columns together through using (clo1 + ' ' +col2) like fname and lname
+5- After finish building the query -->Ok--> GridView Configuration-->Referesh Schema to apply the new query
+6- We can modify the columns name that we want through the GridView Configuration -->Edit columns
+7- To add the sign ($) to a price colums, we have to add the value {0:C} to the column property DataFormatString = {0:C}
+8- We add auto format to the GridView from the configurations

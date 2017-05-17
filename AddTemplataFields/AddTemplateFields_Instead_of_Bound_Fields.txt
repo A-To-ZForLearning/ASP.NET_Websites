@@ -1,0 +1,12 @@
+﻿Adding TemplateField Instead of Bound fields to add Validation to the fields
+
+Changes in the TitleInsert.aspx page
+1- Go to the Design mode --> Eidt Fields---> Delete the required fields to add new fields
+2- Add Template fields and return them back to the deleted fields location after giving them names si,ilar to the deleted once
+3- Go to source view and add inside the template fields these lines of codes
+4- 
+<asp:TemplateField HeaderText="Price">
+    <EditItemTemplate>
+          <asp:TextBox ID="price" runat="server" Text="<%# Bind('price') %>">
+		  </asp:TextBox>
+    </EditItemTemplate>
