@@ -1,0 +1,12 @@
+﻿Changes will be implemented on the 
+     PrintFormat.aspx
+
+1- Adding the property media to the Css link with the value meida="screen", that will help to render the 
+page on any screen and there is the value= "handheld" that will help with other devices' screen like computers, tablets and phones
+ 
+ <link href="styles.css" rel="Stylesheet" type="text/css" media="screen"/>
+
+2-Adding new Css Link, which is the printstyle.css that has some new additional styles for printing by adding the 
+property media="print"
+
+3- Run the page and then Right click on that page--> print to get the result in the Images folder as a pdf file
